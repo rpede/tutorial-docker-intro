@@ -1,4 +1,4 @@
-# Docker
+# Docker CLI Introduction
 
 <small><i>Inspired by <https://training.play-with-docker.com/beginner-linux/></small></i>
 
