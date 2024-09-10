@@ -149,7 +149,7 @@ cat /etc/issue
 Let's put some of the Docker commands to use by spinning up a database.
 
 ```sh
-docker run --name mydb -e POSTGRES_PASSWORD=mysecret -P -d postgres
+docker run --name mydb -e POSTGRES_PASSWORD=mysecret -p 5432:5432 -d postgres
 ```
 
 | Parameter | Meaning                                       |
