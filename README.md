@@ -9,6 +9,7 @@ It is only for reference.
 You don't have to type them (yet).
 
 Parameters in angle brackets are replaced by user input.
+Example: `<image>`
 
 ### Shell
 
