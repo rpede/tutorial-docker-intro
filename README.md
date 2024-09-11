@@ -2,7 +2,7 @@
 
 <small><i>Inspired by <https://training.play-with-docker.com/beginner-linux/></small></i>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vsR3TH9j3zA?si=wQoiT93xGj1PJR29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Video](./video-thumbnail.png)](https://youtu.be/vsR3TH9j3zA)
 
 ## Commands
 
