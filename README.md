@@ -18,7 +18,7 @@ Example: `<image>`
 Run a shell from a container image.
 
 ```sh
-docker container run -it --rm <image> sh
+docker run -it --rm <image> sh
 ```
 
 | Flag      | Meaning                                       |
@@ -59,7 +59,7 @@ docker logs <id or name>
 ### Build an image
 
 ```sh
-docker image build <directory>
+docker build <directory>
 ```
 
 Where `<directory>` is a folder containing a `Dockerfile`.
@@ -69,7 +69,7 @@ It will create with a long HEX code as name.
 You can name and version an image by tagging it.
 
 ```sh
-docker image build --tag <name>:<version> <directory>
+docker build --tag <name>:<version> <directory>
 ```
 
 ### Clean up
@@ -109,7 +109,7 @@ Let's try it out on a couple of different base images.
 **From now on you should try the commands out in your shell.**
 
 ```sh
-docker container run -it --rm ubuntu sh
+docker run -it --rm ubuntu sh
 ```
 
 Then:
@@ -126,7 +126,7 @@ since it has a small footprint.
 Let's try it out!
 
 ```sh
-docker container run -it --rm alpine sh
+docker run -it --rm alpine sh
 ```
 
 Then check the version with:
@@ -140,7 +140,7 @@ cat /etc/issue
 You can also run a specific version of Alpine.
 
 ```sh
-docker container run -it --rm alpine:3.17 sh
+docker run -it --rm alpine:3.17 sh
 cat /etc/issue
 ```
 
@@ -236,13 +236,13 @@ in the output.
 Not very friendly, so let's give it a tag.
 
 ```sh
-docker image build --tag linux_tweet_app:1.0 .
+docker build --tag linux_tweet_app:1.0 .
 ```
 
 You can then run a container from the image, using:
 
 ```sh
-docker container run -d -p 80:80 --name linux_tweet_app linux_tweet_app:1.0
+docker run -d -p 80:80 --name linux_tweet_app linux_tweet_app:1.0
 ```
 
 The reason you see `linux_tweet_app` twice in the command is because we name
