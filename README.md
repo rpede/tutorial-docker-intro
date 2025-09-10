@@ -39,10 +39,10 @@ docker ps
 Show all containers, even those that are not actively running.
 
 ```sh
-docker ps
+docker ps -a
 ```
 
-### Shell in running container
+### Poke around inside a running container
 
 ```sh
 docker exec -it <id or name> sh
@@ -64,7 +64,7 @@ docker build <directory>
 
 Where `<directory>` is a folder containing a `Dockerfile`.
 
-It will create with a long HEX code as name.
+It will create an image with a long HEX code as name.
 
 You can name and version an image by tagging it.
 
@@ -106,7 +106,7 @@ On most Linux systems you can find out what distribution and version it is by
 running `cat /etc/issue`.
 Let's try it out on a couple of different base images.
 
-**From now on you should try the commands out in your shell.**
+**From now on, you should try the commands out in your shell.**
 
 ```sh
 docker run -it --rm ubuntu sh
